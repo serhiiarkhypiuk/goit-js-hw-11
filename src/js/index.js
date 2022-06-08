@@ -22,6 +22,7 @@ function inputHandler(event) {
   searchQuery = input.value;
 
   if (!searchQuery) {
+    loadMoreBtn.style.visibility = 'hidden';
     return;
   }
 
