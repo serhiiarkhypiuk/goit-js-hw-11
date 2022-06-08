@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+form.search-form {
+  width: 100vw;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+input {
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+button {
+  border: none;
+  border-bottom: 1px solid gray;
+  background: gray;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+button.load__more {
+  position: fixed;
+  top: 90%;
+  right: 0%;
+  visibility: hidden;
+}
+
+div.gallery {
+  width: 90%;
+  margin: 12vh 50%;
+  transform: translateX(-50%);
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-auto-rows: minmax(100px, 1fr);
+  justify-content: center;
+}
+
+div.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 5px 10px;
+}
+
+img {
+  height: 25vh;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
